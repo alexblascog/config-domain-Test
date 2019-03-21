@@ -1,0 +1,23 @@
+
+spring:
+  application:
+    name: demo
+  profiles:
+    active: ${ENVIRONMENT:local}
+ 
+---
+# Development, preproduction and production profiles
+spring:
+  profiles: dev,pre,pro # habrá que ver los nombres de los entornos con infraestructura
+  cloud:
+    config:
+      fail-fast: false
+      uri: http://service-config:${SERVICE_CONFIG_PORT:8080}
+      basedir: ´${SERVICE_CONFIG_BASEDIR}´
+---
+# Local
+spring:
+  profiles: local
+  cloud:
+    config:
+      enabled: false  
