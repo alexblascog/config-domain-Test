@@ -1,3 +1,7 @@
 logging:
   level:
     com.sca.framework: DEBUG
+    
+server:
+  contextPath: /
+  port: 8081
