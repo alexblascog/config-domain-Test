@@ -3,4 +3,4 @@ logging:
     com.sca.framework: INFO
 server:
   contextPath: /
-  port: 8082
+  port: 8083
