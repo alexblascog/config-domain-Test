@@ -4,4 +4,4 @@ logging:
     
 server:
   contextPath: /
-  port: 8081
+  port: 8085
